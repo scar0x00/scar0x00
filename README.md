@@ -1,7 +1,6 @@
 <!-- ============================================================
   Profile README for github.com/scar0x00
   Accent color: #6366F1  (search & replace "6366F1" to change it everywhere)
-  Search for "PLACEHOLDER" to find anything still left to fill in.
 ============================================================= -->
 
 <div align="center">
@@ -70,6 +69,9 @@
 
 ## 🛠️ Tech stack
 
+<details>
+<summary>View full tech stack</summary>
+
 **Languages**&nbsp;
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
@@ -115,6 +117,8 @@
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" alt="Figma" />
 
+</details>
+
 <br>
 
 ## 📊 GitHub stats
@@ -152,7 +156,6 @@
 <a href="https://www.linkedin.com/in/oscarmejias-dev/"><img src="https://img.shields.io/badge/LinkedIn-oscarmejias--dev-6366F1?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://scar0x00.click"><img src="https://img.shields.io/badge/Website-scar0x00.click-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
 <a href="https://x.com/scar0x00"><img src="https://img.shields.io/badge/X-@scar0x00-6366F1?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter" /></a>
-<a href="mailto:PLACEHOLDER_EMAIL"><img src="https://img.shields.io/badge/Email-PLACEHOLDER-6366F1?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <br><br>
 

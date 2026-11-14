@@ -8,9 +8,15 @@ on:
     branches:
       - master
       - main
+    paths:
+      - ".github/workflows/snake.yml" # only re-run when this workflow changes
 
 permissions:
   contents: write # needed to push the generated SVGs to the "output" branch
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
@@ -18,15 +24,15 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Generate contribution snake
-        uses: Platane/snk/svg-only@v3
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake.svg?color_snake=#6366F1
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#6366F1
 
       - name: Push to the output branch
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
         with:
           target_branch: output
           build_dir: dist
