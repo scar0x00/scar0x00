@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="348" viewBox="0 0 880 348" fill="none" role="img" aria-label="Óscar Mejías (scar0x00) — Cloud, Infrastructure &amp; Agentic AI Engineer">
+  <title>Óscar Mejías (scar0x00) — Cloud, Infrastructure &amp; Agentic AI Engineer</title>
+  <desc>Hero banner with architectural signal-bus topology connecting Cloud &amp; Infra, Full-Stack Web, Agentic AI, and IaC &amp; Linux.</desc>
+  <defs>
+    <pattern id="hero-light-card-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="10" cy="10" r="0.8" fill="#CFDCD7" />
+  </pattern>
+    <pattern id="hero-light-deck-grid" width="16" height="16" patternUnits="userSpaceOnUse">
+    <circle cx="8" cy="8" r="0.85" fill="#1F3235" />
+  </pattern>
+    <filter id="hero-light-glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="2.2" result="blur" />
+    <feMerge>
+      <feMergeNode in="blur" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+    <clipPath id="hero-light-deck-clip">
+      <rect x="468" y="64" width="388" height="264" rx="14" />
+    </clipPath>
+    <clipPath id="hero-light-card-clip">
+      <rect x="0.5" y="0.5" width="879" height="347" rx="18" />
+    </clipPath>
+    <radialGradient id="hero-light-aura" cx="72%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#C7F36B" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#C7F36B" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="hero-light-top-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C7F36B" stop-opacity="0.7" />
+      <stop offset="35%" stop-color="#D3DFDA" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#D3DFDA" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  
+    @keyframes beaconPulse {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 0.25; transform: scale(2.1); }
+    }
+    @keyframes carrierSweep {
+      0% { stroke-dashoffset: 420; opacity: 0.25; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { stroke-dashoffset: -420; opacity: 0.25; }
+    }
+    @keyframes packetFlow {
+      0% { stroke-dashoffset: 210; opacity: 0; }
+      12% { opacity: 1; }
+      68% { opacity: 1; }
+      100% { stroke-dashoffset: -40; opacity: 0; }
+    }
+    @keyframes brandPulse {
+      0%, 100% { stroke-dashoffset: 0; opacity: 1; }
+      50% { stroke-dashoffset: 68; opacity: 0.55; }
+    }
+    .beacon-ring {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: beaconPulse 2.8s ease-in-out infinite;
+    }
+    .carrier-beam {
+      stroke-dasharray: 84 340;
+      animation: carrierSweep 4.2s linear infinite;
+    }
+    .signal-packet {
+      stroke-dasharray: 26 220;
+      animation: packetFlow 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+    .hero-light-brand-wave {
+      stroke-dasharray: 34 34;
+      animation: brandPulse 5s ease-in-out infinite;
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="347" rx="18" fill="#F4F7F5" stroke="#D3DFDA" stroke-width="1" />
+
+  <!-- Subtle corner architectural dot grid -->
+  <g clip-path="url(#hero-light-card-clip)">
+    <rect x="0" y="48" width="460" height="300" fill="url(#hero-light-card-grid)" opacity="0.42" />
+    <rect x="0" y="0" width="880" height="2" fill="url(#hero-light-top-fade)" />
+  </g>
+
+  <!-- Top Telemetry Bar -->
+  
+  <g transform="translate(24, 12) scale(0.5000)">
+    <rect width="48" height="48" rx="14" fill="#101A1B" stroke="#263B3E" stroke-width="2" />
+    <path d="M12 28h7.5l4.5-11 4.5 11H36" fill="none" stroke="#C7F36B" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" opacity="0.35" />
+    <path class="hero-light-brand-wave" d="M12 28h7.5l4.5-11 4.5 11H36" fill="none" stroke="#C7F36B" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" />
+    <circle cx="12" cy="28" r="2.7" fill="#C7F36B" />
+    <circle cx="36" cy="28" r="2.7" fill="#C7F36B" />
+  </g>
+  <text x="58" y="28.5" class="mono" font-size="12.5" font-weight="700" fill="#101A1B">scar0x00</text>
+  <text x="128" y="28.5" class="mono" font-size="11" fill="#5E716E">//</text>
+  <text x="148" y="28.5" class="mono" font-size="10.2" font-weight="500" letter-spacing="1.1" fill="#495A58">SIGNAL · CLOUD · AGENTS</text>
+
+  <!-- Live Status Indicator -->
+  <circle class="beacon-ring" cx="640" cy="24" r="4" fill="#C7F36B" opacity="0.55" />
+  <circle cx="640" cy="24" r="3" fill="#4D8B1A" />
+  <text x="854" y="28" text-anchor="end" class="mono" font-size="10.2" font-weight="500" letter-spacing="0.7" fill="#495A58">VALENCIA, VE · UTC-4 · EN / ES</text>
+
+  <line x1="1" y1="48" x2="879" y2="48" stroke="#D3DFDA" stroke-width="1" />
+
+  <!-- Left Editorial Identity Column -->
+  <g>
+    <rect x="28" y="68" width="245" height="24" rx="12" fill="#E4F2D0" stroke="#A3CF69" stroke-width="1" />
+    <circle cx="41.5" cy="80" r="3" fill="#33660F" />
+    <text x="51" y="83.332" class="mono" font-size="9.8" font-weight="600" letter-spacing="0.7" fill="#33660F">CLOUD &amp; INFRASTRUCTURE ENGINEER</text>
+  </g>
+
+  <text x="28" y="145" class="sans" font-size="44" font-weight="700" letter-spacing="-1.3" fill="#101A1B">Óscar Mejías</text>
+  <text x="28" y="176" class="sans" font-size="15.5" font-weight="500" fill="#33660F">A developer with an operations perspective.</text>
+
+  <text x="28" y="209" class="sans" font-size="13.5" fill="#495A58">Building AI-powered web apps, cloud infrastructure, and</text>
+  <text x="28" y="230" class="sans" font-size="13.5" fill="#495A58">agentic systems across Azure, AWS, and Cloudflare.</text>
+
+  <line x1="28" y1="262" x2="444" y2="262" stroke="#D3DFDA" stroke-width="1" />
+  
+    <g>
+      <text x="28" y="285" class="mono" font-size="9" font-weight="600" letter-spacing="0.7" fill="#5E716E">01 // EXPERIENCE</text>
+      <text x="28" y="305" class="sans" font-size="13.5" font-weight="600" fill="#101A1B">5+ yrs IT Ops</text>
+      <text x="28" y="321" class="sans" font-size="11" fill="#495A58">Enterprise systems</text>
+    </g>
+    <g>
+      <text x="174" y="285" class="mono" font-size="9" font-weight="600" letter-spacing="0.7" fill="#5E716E">02 // DEGREE</text>
+      <text x="174" y="305" class="sans" font-size="13.5" font-weight="600" fill="#101A1B">Telecom Eng.</text>
+      <text x="174" y="321" class="sans" font-size="11" fill="#495A58">Networks &amp; signal</text>
+    </g>
+    <g>
+      <text x="320" y="285" class="mono" font-size="9" font-weight="600" letter-spacing="0.7" fill="#5E716E">03 // FOCUS</text>
+      <text x="320" y="305" class="sans" font-size="13.5" font-weight="600" fill="#101A1B">Agentic AI</text>
+      <text x="320" y="321" class="sans" font-size="11" fill="#495A58">MCP &amp; CF Agents</text>
+    </g>
+
+  <!-- Right Architectural Signal-Bus Topology Deck -->
+  <g clip-path="url(#hero-light-deck-clip)">
+    <rect x="468" y="64" width="388" height="264" rx="14" fill="#101A1B" />
+    <rect x="468" y="64" width="388" height="264" fill="url(#hero-light-deck-grid)" opacity="0.65" />
+    <rect x="468" y="64" width="388" height="264" fill="url(#hero-light-aura)" />
+
+    <!-- Top Oscilloscope Carrier Strip -->
+    <text x="486" y="85" class="mono" font-size="9.2" font-weight="600" letter-spacing="0.9" fill="#718885">SYSTEM MAP // 0x00</text>
+    <circle cx="775" cy="81.5" r="2.6" fill="#C7F36B" />
+    <text x="838" y="85" text-anchor="end" class="mono" font-size="9.2" font-weight="600" letter-spacing="0.8" fill="#C7F36B">LIVE BUS</text>
+
+    <!-- Carrier Waveform -->
+    <path d="M 484 104 H 526 L 534 104 L 540 93 L 548 113 L 555 96 L 561 104 H 612 L 620 104 L 627 90 L 635 116 L 643 94 L 650 104 H 718 L 725 104 L 731 94 L 738 112 L 745 97 L 751 104 H 840" stroke="#23373A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path class="carrier-beam" d="M 484 104 H 526 L 534 104 L 540 93 L 548 113 L 555 96 L 561 104 H 612 L 620 104 L 627 90 L 635 116 L 643 94 L 650 104 H 718 L 725 104 L 731 94 L 738 112 L 745 97 L 751 104 H 840" stroke="#C7F36B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#hero-light-glow)" />
+
+    <line x1="468" y1="118" x2="856" y2="118" stroke="#233639" stroke-width="1" />
+
+    <!-- Orthogonal Bus Traces and Animated Pulses -->
+    
+      <path d="M 582 224 H 612 V 152 H 646" stroke="#385154" stroke-width="1.4" stroke-linejoin="round" fill="none" />
+      <path class="signal-packet signal-packet-0" d="M 582 224 H 612 V 152 H 646" stroke="#C7F36B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#hero-light-glow)" style="animation-delay: 0s;" />
+      <circle cx="646" cy="152" r="2.8" fill="#C7F36B" />
+    
+      <path d="M 582 224 H 612 V 200 H 646" stroke="#385154" stroke-width="1.4" stroke-linejoin="round" fill="none" />
+      <path class="signal-packet signal-packet-1" d="M 582 224 H 612 V 200 H 646" stroke="#C7F36B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#hero-light-glow)" style="animation-delay: 0.75s;" />
+      <circle cx="646" cy="200" r="2.8" fill="#709454" />
+    
+      <path d="M 582 224 H 612 V 248 H 646" stroke="#385154" stroke-width="1.4" stroke-linejoin="round" fill="none" />
+      <path class="signal-packet signal-packet-2" d="M 582 224 H 612 V 248 H 646" stroke="#C7F36B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#hero-light-glow)" style="animation-delay: 1.5s;" />
+      <circle cx="646" cy="248" r="2.8" fill="#709454" />
+    
+      <path d="M 582 224 H 612 V 296 H 646" stroke="#385154" stroke-width="1.4" stroke-linejoin="round" fill="none" />
+      <path class="signal-packet signal-packet-3" d="M 582 224 H 612 V 296 H 646" stroke="#C7F36B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#hero-light-glow)" style="animation-delay: 2.25s;" />
+      <circle cx="646" cy="296" r="2.8" fill="#709454" />
+    
+    <circle cx="612" cy="224" r="3.6" fill="#C7F36B" filter="url(#hero-light-glow)" />
+
+    <!-- Origin Hub Node -->
+    <rect x="484" y="196" width="98" height="56" rx="10" fill="#1B2E26" stroke="#547935" stroke-width="1.2" />
+    <circle cx="499" cy="218" r="3" fill="#C7F36B" />
+    <text x="508" y="222" class="mono" font-size="12" font-weight="700" fill="#F4F7F5">scar0x00</text>
+    <text x="498" y="238" class="mono" font-size="8.6" letter-spacing="0.7" fill="#718885">CORE NODE</text>
+
+    <!-- 4 Domain Outcome Modules -->
+    
+    <g>
+      <rect x="646" y="133" width="194" height="38" rx="9" fill="#1B2E26" stroke="#5C8338" stroke-width="1" />
+      <circle cx="660" cy="147" r="2.6" fill="#C7F36B" />
+      <text x="670" y="151" class="sans" font-size="12" font-weight="600" fill="#F4F7F5">Cloud &amp; Infra</text>
+      <text x="670" y="165" class="mono" font-size="9.2" fill="#A3B8B5">Azure · AWS · Cloudflare</text>
+      <text x="828" y="151" text-anchor="end" class="mono" font-size="9.2" font-weight="600" fill="#C7F36B">01</text>
+    </g>
+    <g>
+      <rect x="646" y="181" width="194" height="38" rx="9" fill="#172527" stroke="#233639" stroke-width="1" />
+      <circle cx="660" cy="195" r="2.6" fill="#56706E" />
+      <text x="670" y="199" class="sans" font-size="12" font-weight="600" fill="#F4F7F5">Full-Stack Web</text>
+      <text x="670" y="213" class="mono" font-size="9.2" fill="#A3B8B5">TS · Angular · Hono · Astro</text>
+      <text x="828" y="199" text-anchor="end" class="mono" font-size="9.2" font-weight="600" fill="#718885">02</text>
+    </g>
+    <g>
+      <rect x="646" y="229" width="194" height="38" rx="9" fill="#172527" stroke="#233639" stroke-width="1" />
+      <circle cx="660" cy="243" r="2.6" fill="#56706E" />
+      <text x="670" y="247" class="sans" font-size="12" font-weight="600" fill="#F4F7F5">Agentic AI</text>
+      <text x="670" y="261" class="mono" font-size="9.2" fill="#A3B8B5">MCP Servers · CF Agents</text>
+      <text x="828" y="247" text-anchor="end" class="mono" font-size="9.2" font-weight="600" fill="#718885">03</text>
+    </g>
+    <g>
+      <rect x="646" y="277" width="194" height="38" rx="9" fill="#172527" stroke="#233639" stroke-width="1" />
+      <circle cx="660" cy="291" r="2.6" fill="#56706E" />
+      <text x="670" y="295" class="sans" font-size="12" font-weight="600" fill="#F4F7F5">IaC &amp; Linux</text>
+      <text x="670" y="309" class="mono" font-size="9.2" fill="#A3B8B5">Terraform · Ansible · Shell</text>
+      <text x="828" y="295" text-anchor="end" class="mono" font-size="9.2" font-weight="600" fill="#718885">04</text>
+    </g>
+  </g>
+  <rect x="468.5" y="64.5" width="387" height="263" rx="14" fill="none" stroke="#233639" stroke-width="1" />
+  
+</svg>

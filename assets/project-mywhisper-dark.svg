@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="166" viewBox="0 0 432 166" fill="none" role="img" aria-label="mywhisper — scar0x00/mywhisper">
+  <title>mywhisper — scar0x00/mywhisper</title>
+  <desc>Global-hotkey voice dictation for Linux. Record, transcribe via OpenRouter, and auto-type anywhere.</desc>
+  <defs></defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="431" height="165" rx="14" fill="#0D1516" stroke="#1F3134" stroke-width="1" />
+
+  <!-- Top accent edge bar -->
+  <rect x="20" y="0.5" width="44" height="2.2" rx="1.1" fill="#C7F36B" />
+
+  <!-- Top Row: Code + Status -->
+  <text x="20" y="30" class="mono" font-size="9.5" font-weight="600" letter-spacing="0.9" fill="#6B827F">SYS // 02</text>
+  <g>
+    <rect x="320" y="16" width="92" height="21" rx="10.5" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="331.5" cy="26.5" r="3" fill="#C7F36B" />
+    <text x="341" y="29.492" class="mono" font-size="8.8" font-weight="700" letter-spacing="0.7" fill="#C7F36B">LINUX TOOL</text>
+  </g>
+
+  <!-- Title and Description -->
+  <text x="20" y="62" class="sans" font-size="18" font-weight="700" letter-spacing="-0.3" fill="#F4F7F5">mywhisper</text>
+  <text x="20" y="85" class="sans" font-size="12.2" fill="#9CB2AF">Global-hotkey voice dictation for Linux. Record,</text>
+  <text x="20" y="103" class="sans" font-size="12.2" fill="#9CB2AF">transcribe via OpenRouter, and auto-type anywhere.</text>
+
+  <!-- Bottom Tags and External Arrow -->
+  <g>
+    <rect x="20" y="124" width="38" height="23" rx="6" fill="#172628" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="29" y="138.764" class="mono" font-size="9.6" font-weight="500" letter-spacing="0" fill="#9CB2AF">Bun</text>
+  </g><g>
+    <rect x="65" y="124" width="78" height="23" rx="6" fill="#172628" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="74" y="138.764" class="mono" font-size="9.6" font-weight="500" letter-spacing="0" fill="#9CB2AF">TypeScript</text>
+  </g><g>
+    <rect x="150" y="124" width="78" height="23" rx="6" fill="#172628" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="159" y="138.764" class="mono" font-size="9.6" font-weight="500" letter-spacing="0" fill="#9CB2AF">OpenRouter</text>
+  </g><g>
+    <rect x="235" y="124" width="60" height="23" rx="6" fill="#172628" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="244" y="138.764" class="mono" font-size="9.6" font-weight="500" letter-spacing="0" fill="#9CB2AF">xdotool</text>
+  </g>
+  <path d="M 404 139 L 411 132 M 405.5 132 H 411 V 137.5" fill="none" stroke="#C7F36B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  
+</svg>

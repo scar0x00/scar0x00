@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="36" viewBox="0 0 174 36" fill="none" role="img" aria-label="scar0x00.click">
+  <title>scar0x00.click</title>
+  <defs></defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+  <rect x="0.75" y="0.75" width="172.5" height="34.5" rx="18" fill="#C7F36B" stroke="#C7F36B" stroke-width="1.2" />
+  <g transform="translate(15, 11)">
+        <path d="M1 8.5h3.2l2.2-5 2.2 5H12" fill="none" stroke="#101A1B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="1" cy="8.5" r="1.2" fill="#101A1B" />
+        <circle cx="12" cy="8.5" r="1.2" fill="#101A1B" />
+      </g>
+  <text x="36" y="22.3" class="sans" font-size="12" font-weight="600" letter-spacing="0.1" fill="#101A1B">scar0x00.click</text>
+  <path d="M 152 21.5 L 158.5 15 M 153.5 15 H 158.5 V 20" fill="none" stroke="#101A1B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  
+</svg>

@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="308" viewBox="0 0 880 308" fill="none" role="img" aria-label="Óscar Mejías — Systems &amp; Tech Stack Matrix">
+  <title>Óscar Mejías — Systems &amp; Tech Stack Matrix</title>
+  <desc>5-layer engineering specification covering Cloud &amp; Infra, Languages, Full-Stack, Data &amp; Edge, and AI &amp; Tooling.</desc>
+  <defs></defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="307" rx="16" fill="#0D1516" stroke="#1F3134" stroke-width="1" />
+
+  <!-- Top Legend Header -->
+  <text x="20" y="24.5" class="mono" font-size="9.8" font-weight="600" letter-spacing="0.9" fill="#6B827F">TECHNICAL SPECIFICATION MATRIX</text>
+
+  <!-- Core Specialty Legend -->
+  <circle cx="720" cy="21" r="3" fill="#C7F36B" />
+  <text x="729" y="24.5" class="mono" font-size="9.4" font-weight="600" letter-spacing="0.6" fill="#9CB2AF">CORE DAILY STACK</text>
+
+  <line x1="1" y1="40" x2="879" y2="40" stroke="#1F3134" stroke-width="1" />
+  <line x1="176" y1="40" x2="176" y2="307" stroke="#1F3134" stroke-width="1" />
+
+  
+    <g>
+      
+      <rect x="20" y="56" width="26" height="20" rx="5" fill="#172628" stroke="#1F3134" stroke-width="1" />
+      <text x="33" y="69.5" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#C7F36B">L1</text>
+      <text x="56" y="69.8" class="mono" font-size="10.2" font-weight="600" letter-spacing="0.8" fill="#F4F7F5">CLOUD &amp; INFRA</text>
+      <g>
+    <rect x="192" y="53.5" width="64" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="203.5" cy="66" r="3" fill="#C7F36B" />
+    <text x="213" y="69.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">Azure</text>
+  </g><g>
+    <rect x="261.5" y="53.5" width="57" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="273" cy="66" r="3" fill="#C7F36B" />
+    <text x="282.5" y="69.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">AWS</text>
+  </g><g>
+    <rect x="324" y="53.5" width="89" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="335.5" cy="66" r="3" fill="#C7F36B" />
+    <text x="345" y="69.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">Cloudflare</text>
+  </g><g>
+    <rect x="418.5" y="53.5" width="70" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="426.5" y="69.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Terraform</text>
+  </g><g>
+    <rect x="494" y="53.5" width="57" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="502" y="69.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Ansible</text>
+  </g><g>
+    <rect x="556.5" y="53.5" width="54" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="564.5" y="69.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Docker</text>
+  </g><g>
+    <rect x="616" y="53.5" width="66" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="624" y="69.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Tailscale</text>
+  </g><g>
+    <rect x="687.5" y="53.5" width="76" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="695.5" y="69.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">GH Actions</text>
+  </g><g>
+    <rect x="769" y="53.5" width="47" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="777" y="69.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Linux</text>
+  </g>
+    </g>
+    <g>
+      <line x1="16" y1="92" x2="864" y2="92" stroke="#1F3134" stroke-width="1" />
+      <rect x="20" y="108" width="26" height="20" rx="5" fill="#172628" stroke="#1F3134" stroke-width="1" />
+      <text x="33" y="121.5" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#C7F36B">L2</text>
+      <text x="56" y="121.8" class="mono" font-size="10.2" font-weight="600" letter-spacing="0.8" fill="#F4F7F5">LANGUAGES</text>
+      <g>
+    <rect x="192" y="105.5" width="94" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="203.5" cy="118" r="3" fill="#C7F36B" />
+    <text x="213" y="121.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">TypeScript</text>
+  </g><g>
+    <rect x="291.5" y="105.5" width="76" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="299.5" y="121.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">JavaScript</text>
+  </g><g>
+    <rect x="373" y="105.5" width="54" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="381" y="121.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Python</text>
+  </g><g>
+    <rect x="432.5" y="105.5" width="32" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="440.5" y="121.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Go</text>
+  </g><g>
+    <rect x="470" y="105.5" width="35" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="478" y="121.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">C#</text>
+  </g><g>
+    <rect x="510.5" y="105.5" width="95" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="522" cy="118" r="3" fill="#C7F36B" />
+    <text x="531.5" y="121.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">PowerShell</text>
+  </g><g>
+    <rect x="611" y="105.5" width="44" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="619" y="121.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Bash</text>
+  </g>
+    </g>
+    <g>
+      <line x1="16" y1="144" x2="864" y2="144" stroke="#1F3134" stroke-width="1" />
+      <rect x="20" y="160" width="26" height="20" rx="5" fill="#172628" stroke="#1F3134" stroke-width="1" />
+      <text x="33" y="173.5" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#C7F36B">L3</text>
+      <text x="56" y="173.8" class="mono" font-size="10.2" font-weight="600" letter-spacing="0.8" fill="#F4F7F5">FULL-STACK</text>
+      <g>
+    <rect x="192" y="157.5" width="74" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="203.5" cy="170" r="3" fill="#C7F36B" />
+    <text x="213" y="173.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">Angular</text>
+  </g><g>
+    <rect x="271.5" y="157.5" width="47" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="279.5" y="173.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Astro</text>
+  </g><g>
+    <rect x="324" y="157.5" width="86" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="332" y="173.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">React Router</text>
+  </g><g>
+    <rect x="415.5" y="157.5" width="63" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="423.5" y="173.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Tailwind</text>
+  </g><g>
+    <rect x="484" y="157.5" width="69" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="492" y="173.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">shadcn/ui</text>
+  </g><g>
+    <rect x="558.5" y="157.5" width="59" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="570" cy="170" r="3" fill="#C7F36B" />
+    <text x="579.5" y="173.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">Hono</text>
+  </g><g>
+    <rect x="623" y="157.5" width="53" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="634.5" cy="170" r="3" fill="#C7F36B" />
+    <text x="644" y="173.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">Bun</text>
+  </g><g>
+    <rect x="681.5" y="157.5" width="57" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="689.5" y="173.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Node.js</text>
+  </g><g>
+    <rect x="744" y="157.5" width="44" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="752" y="173.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">.NET</text>
+  </g>
+    </g>
+    <g>
+      <line x1="16" y1="196" x2="864" y2="196" stroke="#1F3134" stroke-width="1" />
+      <rect x="20" y="212" width="26" height="20" rx="5" fill="#172628" stroke="#1F3134" stroke-width="1" />
+      <text x="33" y="225.5" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#C7F36B">L4</text>
+      <text x="56" y="225.8" class="mono" font-size="10.2" font-weight="600" letter-spacing="0.8" fill="#F4F7F5">DATA &amp; EDGE</text>
+      <g>
+    <rect x="192" y="209.5" width="99" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="203.5" cy="222" r="3" fill="#C7F36B" />
+    <text x="213" y="225.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">PostgreSQL</text>
+  </g><g>
+    <rect x="296.5" y="209.5" width="121" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="308" cy="222" r="3" fill="#C7F36B" />
+    <text x="317.5" y="225.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">Durable Objects</text>
+  </g><g>
+    <rect x="423" y="209.5" width="32" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="431" y="225.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">R2</text>
+  </g><g>
+    <rect x="460.5" y="209.5" width="93" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="468.5" y="225.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Upstash Redis</text>
+  </g><g>
+    <rect x="559" y="209.5" width="78" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="567" y="225.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">SQL Server</text>
+  </g><g>
+    <rect x="642.5" y="209.5" width="54" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="650.5" y="225.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">SQLite</text>
+  </g><g>
+    <rect x="702" y="209.5" width="58" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="710" y="225.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">DuckDB</text>
+  </g>
+    </g>
+    <g>
+      <line x1="16" y1="248" x2="864" y2="248" stroke="#1F3134" stroke-width="1" />
+      <rect x="20" y="264" width="26" height="20" rx="5" fill="#172628" stroke="#1F3134" stroke-width="1" />
+      <text x="33" y="277.5" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#C7F36B">L5</text>
+      <text x="56" y="277.8" class="mono" font-size="10.2" font-weight="600" letter-spacing="0.8" fill="#F4F7F5">AI &amp; TOOLING</text>
+      <g>
+    <rect x="192" y="261.5" width="57" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="203.5" cy="274" r="3" fill="#C7F36B" />
+    <text x="213" y="277.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">MCP</text>
+  </g><g>
+    <rect x="254.5" y="261.5" width="118" height="25" rx="7" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+    <circle cx="266" cy="274" r="3" fill="#C7F36B" />
+    <text x="275.5" y="277.332" class="sans" font-size="9.8" font-weight="600" letter-spacing="0" fill="#E8F9C1">CF Agents SDK</text>
+  </g><g>
+    <rect x="378" y="261.5" width="73" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="386" y="277.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">LangChain</text>
+  </g><g>
+    <rect x="456.5" y="261.5" width="78" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="464.5" y="277.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">OpenRouter</text>
+  </g><g>
+    <rect x="540" y="261.5" width="74" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="548" y="277.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Playwright</text>
+  </g><g>
+    <rect x="619.5" y="261.5" width="33" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="627.5" y="277.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Git</text>
+  </g><g>
+    <rect x="658" y="261.5" width="50" height="25" rx="7" fill="#121E20" stroke="#1F3134" stroke-width="1" />
+    
+    <text x="666" y="277.332" class="sans" font-size="9.8" font-weight="500" letter-spacing="0" fill="#9CB2AF">Figma</text>
+  </g>
+    </g>
+  
+</svg>

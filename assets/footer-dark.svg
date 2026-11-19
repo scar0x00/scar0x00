@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="64" viewBox="0 0 880 64" fill="none" role="img" aria-label="scar0x00 — Built to connect the dots">
+  <title>scar0x00 — Built to connect the dots</title>
+  <defs>
+    <filter id="footer-dark-glow" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="2" result="blur" />
+    <feMerge>
+      <feMergeNode in="blur" />
+      <feMergeNode in="SourceGraphic" />
+    </feMerge>
+  </filter>
+  </defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  
+    @keyframes footerPulse {
+      0% { stroke-dashoffset: 310; opacity: 0.2; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { stroke-dashoffset: -310; opacity: 0.2; }
+    }
+    .footer-dark-wave {
+      stroke-dasharray: 56 260;
+      animation: footerPulse 3.6s linear infinite;
+    }
+    .footer-dark-brand-wave {
+      stroke-dasharray: 34 34;
+    }
+  </style>
+  <rect x="0.5" y="0.5" width="879" height="63" rx="14" fill="#0D1516" stroke="#1F3134" stroke-width="1" />
+
+  
+  <g transform="translate(18, 20) scale(0.5000)">
+    <rect width="48" height="48" rx="14" fill="#101A1B" stroke="#263B3E" stroke-width="2" />
+    <path d="M12 28h7.5l4.5-11 4.5 11H36" fill="none" stroke="#C7F36B" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" opacity="0.35" />
+    <path class="footer-dark-brand-wave" d="M12 28h7.5l4.5-11 4.5 11H36" fill="none" stroke="#C7F36B" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" />
+    <circle cx="12" cy="28" r="2.7" fill="#C7F36B" />
+    <circle cx="36" cy="28" r="2.7" fill="#C7F36B" />
+  </g>
+  <text x="52" y="30" class="mono" font-size="11" font-weight="700" fill="#F4F7F5">scar0x00</text>
+  <text x="52" y="45" class="mono" font-size="9.5" letter-spacing="0.8" fill="#6B827F">BUILT TO CONNECT THE DOTS</text>
+
+  <!-- Center Animated Signal Line -->
+  <path d="M 300 32 H 416 L 425 32 L 433 20 L 442 44 L 450 24 L 457 32 H 580" stroke="#2E464A" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <path class="footer-dark-wave" d="M 300 32 H 416 L 425 32 L 433 20 L 442 44 L 450 24 L 457 32 H 580" stroke="#C7F36B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#footer-dark-glow)" />
+  <circle cx="300" cy="32" r="2.3" fill="#C7F36B" />
+  <circle cx="580" cy="32" r="2.3" fill="#C7F36B" />
+
+  <!-- Right Sign-off -->
+  <text x="858" y="30" text-anchor="end" class="mono" font-size="10.2" font-weight="600" letter-spacing="0.8" fill="#F4F7F5">VALENCIA, VE  ·  UTC-4</text>
+  <text x="858" y="45" text-anchor="end" class="mono" font-size="9.5" letter-spacing="0.6" fill="#9CB2AF">OPEN TO AMBITIOUS CLOUD &amp; AI SYSTEMS</text>
+  
+</svg>

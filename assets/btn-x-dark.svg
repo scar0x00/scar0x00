@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148" height="36" viewBox="0 0 148 36" fill="none" role="img" aria-label="@scar0x00">
+  <title>@scar0x00</title>
+  <defs></defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+  <rect x="0.75" y="0.75" width="146.5" height="34.5" rx="18" fill="#121E20" stroke="#2E464A" stroke-width="1.2" />
+  <g transform="translate(15, 11)">
+        <path d="M2 2l10 10M12 2L2 12" fill="none" stroke="#F4F7F5" stroke-width="1.7" stroke-linecap="round" />
+      </g>
+  <text x="36" y="22.3" class="sans" font-size="12" font-weight="600" letter-spacing="0.1" fill="#F4F7F5">@scar0x00</text>
+  <path d="M 126 21.5 L 132.5 15 M 127.5 15 H 132.5 V 20" fill="none" stroke="#C7F36B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+  
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="36" viewBox="0 0 880 36" fill="none" role="img" aria-label="01 — FLAGSHIP ARCHITECTURE">
+  <title>01 — FLAGSHIP ARCHITECTURE</title>
+  <defs></defs>
+  <style>
+    .sans { font-family: 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif; }
+    .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+  <rect x="0" y="8" width="30" height="20" rx="6" fill="#1A2A1E" stroke="#3F5E30" stroke-width="1" />
+  <text x="15" y="21.6" text-anchor="middle" class="mono" font-size="10.2" font-weight="700" fill="#C7F36B">01</text>
+
+  <text x="42" y="22" class="mono" font-size="11.5" font-weight="700" letter-spacing="1.3" fill="#F4F7F5">FLAGSHIP ARCHITECTURE</text>
+
+  <line x1="228" y1="18" x2="662" y2="18" stroke="#1F3134" stroke-width="1" />
+  <circle cx="228" cy="18" r="2" fill="#C7F36B" />
+
+  <text x="880" y="21.5" text-anchor="end" class="mono" font-size="9.8" font-weight="500" letter-spacing="0.9" fill="#6B827F">REMAIN · CLOUDFLARE EDGE · MCP</text>
+  
+</svg>

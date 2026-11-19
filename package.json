@@ -1,0 +1,13 @@
+{
+  "name": "scar0x00-profile",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bespoke dual-theme SVG architecture and live GitHub telemetry compiler for github.com/scar0x00",
+  "scripts": {
+    "build": "bun run src/build-static.ts && bun run src/build-live.ts",
+    "build:static": "bun run src/build-static.ts",
+    "build:live": "bun run src/build-live.ts",
+    "test": "bun test"
+  }
+}
