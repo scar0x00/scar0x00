@@ -103,20 +103,20 @@ export function renderStack(mode: ThemeMode): string {
       .map((item) => {
         const chip = renderPill({
           x: cursorX,
-          y: cy - 12.5,
+          y: cy - 13,
           label: item.name,
           bg: item.core ? t.accentSoft : t.bgElevated,
           border: item.core ? t.accentBorder : t.border,
           textColor: item.core ? (mode === "dark" ? "#E8F9C1" : t.textPrimary) : t.textSecondary,
           dotColor: item.core ? (mode === "dark" ? "#C7F36B" : "#4A851B") : undefined,
-          fontSize: 9.8,
-          height: 25,
-          px: 8,
+          fontSize: 10.6,
+          height: 26,
+          px: 9,
           radius: 7,
           family: "sans",
           fontWeight: item.core ? 600 : 500,
         });
-        cursorX += chip.width + 5.5;
+        cursorX += chip.width + 6.5;
         return chip.svg;
       })
       .join("");

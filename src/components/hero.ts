@@ -4,6 +4,7 @@ import {
   esc,
   estimateTextWidth,
   renderBrandMark,
+  renderDisplayText,
   renderPill,
   signalGlowFilter,
   wrapSvg,
@@ -115,7 +116,7 @@ export function renderHero(mode: ThemeMode): string {
     <g>
       <rect x="${nodeX}" y="${ny}" width="${nodeW}" height="${nodeH}" rx="9" fill="${fill}" stroke="${stroke}" stroke-width="1" />
       <circle cx="${nodeX + 14}" cy="${n.cy - 5}" r="2.6" fill="${dotFill}" />
-      <text x="${nodeX + 24}" y="${n.cy - 1}" class="sans" font-size="12" font-weight="600" fill="${t.deckText}">${esc(n.title)}</text>
+      ${renderDisplayText({ text: n.title, x: nodeX + 24, y: n.cy - 1, fontSize: 12, fontWeight: 600, fill: t.deckText })}
       <text x="${nodeX + 24}" y="${n.cy + 13}" class="mono" font-size="9.2" fill="${t.deckSubtext}">${esc(n.detail)}</text>
       <text x="${nodeX + nodeW - 12}" y="${n.cy - 1}" text-anchor="end" class="mono" font-size="9.2" font-weight="600" fill="${codeFill}">${esc(n.code)}</text>
     </g>`;
@@ -197,8 +198,8 @@ export function renderHero(mode: ThemeMode): string {
       (c) => `
     <g>
       <text x="${c.x}" y="285" class="mono" font-size="9" font-weight="600" letter-spacing="0.7" fill="${t.textMuted}">${esc(c.code)}</text>
-      <text x="${c.x}" y="305" class="sans" font-size="13.5" font-weight="600" fill="${t.textPrimary}">${esc(c.value)}</text>
-      <text x="${c.x}" y="321" class="sans" font-size="11" fill="${t.textSecondary}">${esc(c.sub)}</text>
+      ${renderDisplayText({ text: c.value, x: c.x, y: 305, fontSize: 13.5, fontWeight: 600, fill: t.textPrimary })}
+      ${renderDisplayText({ text: c.sub, x: c.x, y: 321, fontSize: 11, fontWeight: 400, fill: t.textSecondary })}
     </g>`,
     )
     .join("");
@@ -228,11 +229,11 @@ export function renderHero(mode: ThemeMode): string {
   <!-- Left Editorial Identity Column -->
   ${kicker.svg}
 
-  <text x="28" y="145" class="sans" font-size="44" font-weight="700" letter-spacing="-1.3" fill="${t.textPrimary}">${esc(PROFILE_META.displayName)}</text>
-  <text x="28" y="176" class="sans" font-size="15.5" font-weight="500" fill="${t.accentText}">A developer with an operations perspective.</text>
+  ${renderDisplayText({ text: PROFILE_META.displayName, x: 28, y: 145, fontSize: 45, fontWeight: 700, letterSpacing: -1.4, fill: t.textPrimary })}
+  ${renderDisplayText({ text: "A developer with an operations perspective.", x: 28, y: 176, fontSize: 15.5, fontWeight: 500, letterSpacing: -0.2, fill: t.accentText })}
 
-  <text x="28" y="209" class="sans" font-size="13.5" fill="${t.textSecondary}">Building AI-powered web apps, cloud infrastructure, and</text>
-  <text x="28" y="230" class="sans" font-size="13.5" fill="${t.textSecondary}">agentic systems across Azure, AWS, and Cloudflare.</text>
+  ${renderDisplayText({ text: "Building AI-powered web apps, cloud infrastructure, and", x: 28, y: 209, fontSize: 13.5, fontWeight: 400, fill: t.textSecondary })}
+  ${renderDisplayText({ text: "agentic systems across Azure, AWS, and Cloudflare.", x: 28, y: 230, fontSize: 13.5, fontWeight: 400, fill: t.textSecondary })}
 
   <line x1="28" y1="262" x2="444" y2="262" stroke="${t.border}" stroke-width="1" />
   ${credentialsSvg}

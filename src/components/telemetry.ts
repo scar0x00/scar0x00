@@ -8,6 +8,7 @@ import {
   cardShell,
   dotGridPattern,
   esc,
+  renderDisplayText,
   signalGlowFilter,
   wrapSvg,
 } from "../svg";
@@ -99,7 +100,7 @@ export function renderTelemetry(data: TelemetryData, mode: ThemeMode): string {
       <rect x="${tx}" y="${tileY}" width="${tileW}" height="${tileH}" rx="11" fill="${t.bgElevated}" stroke="${kpi.highlight ? t.accentBorder : t.border}" stroke-width="1" />
       <text x="${tx + 14}" y="${tileY + 21}" class="mono" font-size="9" font-weight="600" letter-spacing="0.8" fill="${kpi.highlight ? t.accentText : t.textMuted}">${esc(kpi.label)}</text>
       <text x="${tx + 14}" y="${tileY + 49}" class="mono" font-size="${kpi.fontSize}" font-weight="700" fill="${t.textPrimary}">${esc(kpi.value)}</text>
-      <text x="${tx + 14}" y="${tileY + 65}" class="sans" font-size="10.8" fill="${t.textSecondary}">${esc(kpi.sub)}</text>
+      ${renderDisplayText({ text: kpi.sub, x: tx + 14, y: tileY + 65, fontSize: 10.8, fontWeight: 400, fill: t.textSecondary })}
     </g>`;
     })
     .join("");
@@ -202,7 +203,7 @@ export function renderTelemetry(data: TelemetryData, mode: ThemeMode): string {
       return `
       <g>
         <circle cx="${langX + 20}" cy="${ly - 3.5}" r="3.4" fill="${color}" />
-        <text x="${langX + 32}" y="${ly}" class="sans" font-size="11.2" font-weight="500" fill="${t.textPrimary}">${esc(lang.name)}</text>
+        ${renderDisplayText({ text: lang.name, x: langX + 32, y: ly, fontSize: 11.2, fontWeight: 500, fill: t.textPrimary })}
         <text x="${langX + langW - 16}" y="${ly}" text-anchor="end" class="mono" font-size="10.8" font-weight="600" fill="${t.textSecondary}">${lang.percent.toFixed(1)}%</text>
       </g>`;
     })

@@ -1,4 +1,4 @@
-import { esc, estimateTextWidth, wrapSvg } from "../svg";
+import { estimateTextWidth, renderDisplayText, wrapSvg } from "../svg";
 import { THEMES, type ThemeMode } from "../theme";
 
 export type ButtonVariant = "primary" | "secondary" | "amber";
@@ -82,7 +82,7 @@ export function renderButton(spec: ButtonSpec, mode: ThemeMode): string {
   const body = `
   <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="${H / 2}" fill="${fill}" stroke="${stroke}" stroke-width="1.2" />
   ${renderIcon(spec.icon, textColor, 15, 11)}
-  <text x="36" y="22.3" class="sans" font-size="${fontSize}" font-weight="600" letter-spacing="0.1" fill="${textColor}">${esc(spec.label)}</text>
+  ${renderDisplayText({ text: spec.label, x: 36, y: 22.2, fontSize, fontWeight: 600, letterSpacing: 0.1, fill: textColor })}
   <path d="M ${arrowX} 21.5 L ${arrowX + 6.5} 15 M ${arrowX + 1.5} 15 H ${arrowX + 6.5} V 20" fill="none" stroke="${arrowColor}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
   `;
 

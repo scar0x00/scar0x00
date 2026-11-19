@@ -1,4 +1,4 @@
-import { cardShell, esc, renderPill, wrapSvg } from "../svg";
+import { cardShell, esc, renderDisplayText, renderPill, wrapSvg } from "../svg";
 import { THEMES, type ThemeMode } from "../theme";
 
 export interface ProjectCardSpec {
@@ -143,9 +143,9 @@ export function renderProjectCard(spec: ProjectCardSpec, mode: ThemeMode): strin
   ${statusPill.svg}
 
   <!-- Title and Description -->
-  <text x="20" y="62" class="sans" font-size="18" font-weight="700" letter-spacing="-0.3" fill="${t.textPrimary}">${esc(spec.title)}</text>
-  <text x="20" y="85" class="sans" font-size="12.2" fill="${t.textSecondary}">${esc(spec.line1)}</text>
-  <text x="20" y="103" class="sans" font-size="12.2" fill="${t.textSecondary}">${esc(spec.line2)}</text>
+  ${renderDisplayText({ text: spec.title, x: 20, y: 62, fontSize: 18.5, fontWeight: 700, letterSpacing: -0.4, fill: t.textPrimary })}
+  ${renderDisplayText({ text: spec.line1, x: 20, y: 85, fontSize: 12.2, fontWeight: 400, fill: t.textSecondary })}
+  ${renderDisplayText({ text: spec.line2, x: 20, y: 103, fontSize: 12.2, fontWeight: 400, fill: t.textSecondary })}
 
   <!-- Bottom Tags and External Arrow -->
   ${tagChips}

@@ -2,6 +2,8 @@ import {
   cardShell,
   dotGridPattern,
   esc,
+  measureDisplayText,
+  renderDisplayText,
   renderPill,
   signalGlowFilter,
   wrapSvg,
@@ -110,7 +112,7 @@ export function renderRemainArch(mode: ThemeMode): string {
     <g>
       <rect x="${tile.x}" y="${tile.y}" width="132" height="44" rx="8" fill="${t.deckNodeBg}" stroke="${t.deckBorder}" stroke-width="1" />
       <circle cx="${tile.x + 12}" cy="${tile.y + 16}" r="2.4" fill="${tile.dot}" />
-      <text x="${tile.x + 21}" y="${tile.y + 19.5}" class="sans" font-size="11" font-weight="600" fill="${t.deckText}">${esc(tile.title)}</text>
+      ${renderDisplayText({ text: tile.title, x: tile.x + 21, y: tile.y + 19.5, fontSize: 11, fontWeight: 600, fill: t.deckText })}
       <text x="${tile.x + 12}" y="${tile.y + 34.5}" class="mono" font-size="9" fill="${t.deckSubtext}">${esc(tile.sub)}</text>
     </g>`,
     )
@@ -129,10 +131,12 @@ export function renderRemainArch(mode: ThemeMode): string {
     <g>
       ${i > 0 ? `<line x1="${h.x - 14}" y1="282" x2="${h.x - 14}" y2="322" stroke="${t.border}" stroke-width="1" />` : ""}
       <text x="${h.x}" y="294" class="mono" font-size="9.2" font-weight="700" letter-spacing="0.6" fill="${t.accentText}">${esc(h.code)}</text>
-      <text x="${h.x}" y="314" class="sans" font-size="11.5" fill="${t.textSecondary}">${esc(h.text)}</text>
+      ${renderDisplayText({ text: h.text, x: h.x, y: 314, fontSize: 11.5, fontWeight: 400, fill: t.textSecondary })}
     </g>`,
     )
     .join("");
+
+  const remainTitleWidth = measureDisplayText("Remain", 16, 700, -0.2);
 
   const body = `
   ${cardShell(W, H, t, 16)}
@@ -144,8 +148,9 @@ export function renderRemainArch(mode: ThemeMode): string {
   <rect x="30" y="26" width="8" height="2.2" rx="1.1" fill="#FBBF24" />
   <rect x="30" y="31" width="5.5" height="2.2" rx="1.1" fill="#FBBF24" opacity="0.7" />
 
-  <text x="58" y="29" class="sans" font-size="16" font-weight="700" fill="${t.textPrimary}">Remain<tspan dx="9" font-size="13" font-weight="400" fill="${t.textSecondary}">—  AI-powered flashcard platform</tspan></text>
-  <text x="58" y="46" class="sans" font-size="11.2" fill="${t.textMuted}">Turn notes and PDFs into flashcard decks with an AI agent, refine by chat, and track what sticks.</text>
+  ${renderDisplayText({ text: "Remain", x: 58, y: 29, fontSize: 16, fontWeight: 700, letterSpacing: -0.2, fill: t.textPrimary })}
+  ${renderDisplayText({ text: "—  AI-powered flashcard platform", x: 58 + remainTitleWidth + 9, y: 29, fontSize: 13, fontWeight: 400, fill: t.textSecondary })}
+  ${renderDisplayText({ text: "Turn notes and PDFs into flashcard decks with an AI agent, refine by chat, and track what sticks.", x: 58, y: 46, fontSize: 11.2, fontWeight: 400, fill: t.textMuted })}
 
   ${badgePlaced.svg}
 
@@ -189,27 +194,27 @@ export function renderRemainArch(mode: ThemeMode): string {
     <!-- Node: Angular Web App -->
     <rect x="34" y="90" width="172" height="58" rx="10" fill="${t.deckNodeBg}" stroke="${t.deckBorder}" stroke-width="1.1" />
     <circle cx="48" cy="109" r="3" fill="#C7F36B" />
-    <text x="58" y="113" class="sans" font-size="12.2" font-weight="600" fill="${t.deckText}">Angular Web App</text>
+    ${renderDisplayText({ text: "Angular Web App", x: 58, y: 113, fontSize: 12.2, fontWeight: 600, fill: t.deckText })}
     <text x="48" y="131" class="mono" font-size="9.2" fill="${t.deckSubtext}">Study · Chat · Analytics</text>
 
     <!-- Node: MCP Server -->
     <rect x="34" y="176" width="172" height="58" rx="10" fill="${t.deckNodeBg}" stroke="${t.deckBorder}" stroke-width="1.1" />
     <circle cx="48" cy="195" r="3" fill="#5CE1E6" />
-    <text x="58" y="199" class="sans" font-size="12.2" font-weight="600" fill="${t.deckText}">MCP Server</text>
+    ${renderDisplayText({ text: "MCP Server", x: 58, y: 199, fontSize: 12.2, fontWeight: 600, fill: t.deckText })}
     <text x="48" y="217" class="mono" font-size="9.2" fill="${t.deckSubtext}">Claude.ai &amp; Claude Code</text>
 
     <!-- Center Hub: Hono on Cloudflare Workers -->
     <rect x="286" y="112" width="212" height="106" rx="11" fill="${t.deckNodeActiveBg}" stroke="#547935" stroke-width="1.3" />
-    <rect x="300" y="124" width="128" height="18" rx="4" fill="#1C3026" stroke="#3B5D30" stroke-width="0.9" />
+    <rect x="300" y="124" width="142" height="18" rx="4" fill="#1C3026" stroke="#3B5D30" stroke-width="0.9" />
     <text x="308" y="136.3" class="mono" font-size="8.6" font-weight="700" letter-spacing="0.6" fill="#C7F36B">CLOUDFLARE WORKERS</text>
-    <text x="300" y="164" class="sans" font-size="15" font-weight="700" fill="${t.deckText}">Hono Edge API</text>
+    ${renderDisplayText({ text: "Hono Edge API", x: 300, y: 164, fontSize: 15, fontWeight: 700, letterSpacing: -0.2, fill: t.deckText })}
     <text x="300" y="184" class="mono" font-size="9.4" fill="${t.deckSubtext}">better-auth · CF Access</text>
     <text x="300" y="201" class="mono" font-size="9.4" fill="${t.deckMuted}">Passkeys · 2FA · Rate Limits</text>
 
     <!-- Featured AI Node: Cloudflare Agents SDK (Durable Objects) -->
     <rect x="572" y="90" width="272" height="48" rx="9" fill="#1E1C14" stroke="#8A6820" stroke-width="1.2" />
     <circle cx="586" cy="107" r="3" fill="#FBBF24" />
-    <text x="596" y="111" class="sans" font-size="12" font-weight="700" fill="${t.deckText}">CF Agents SDK · Durable Objects</text>
+    ${renderDisplayText({ text: "CF Agents SDK · Durable Objects", x: 596, y: 111, fontSize: 12, fontWeight: 700, fill: t.deckText })}
     <text x="586" y="127" class="mono" font-size="9" fill="#E3C376">Streaming deck generation &amp; chat edits</text>
 
     <!-- 2x2 Data Plane Tiles -->

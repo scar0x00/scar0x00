@@ -41,8 +41,8 @@ export function renderSectionHeader(spec: SectionSpec, mode: ThemeMode): string 
   const H = 36;
   const cy = 18;
 
-  const titleW = estimateTextWidth(spec.title, 11.5, "mono", 1.3);
-  const tagW = estimateTextWidth(spec.tag, 9.8, "mono", 0.9);
+  const titleW = estimateTextWidth(spec.title, 11.5, "mono", 1.3, 700);
+  const tagW = estimateTextWidth(spec.tag, 9.8, "mono", 0.9, 500);
 
   const badgeX = 0;
   const badgeW = 30;

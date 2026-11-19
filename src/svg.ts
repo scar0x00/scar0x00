@@ -1,4 +1,7 @@
+import { measureDisplayText, renderDisplayText } from "./font";
 import { FONTS, type ThemePalette } from "./theme";
+
+export { measureDisplayText, renderDisplayText };
 
 /** Strict XML text/attribute escaper */
 export function esc(value: string | number): string {
@@ -11,8 +14,9 @@ export function esc(value: string | number): string {
 }
 
 /**
- * Deterministic visual text width estimator (px) tuned to system sans/mono fonts.
- * Slightly conservative so rounded badges & pills never clip text across OS renderers.
+ * Deterministic visual text width measurer (px).
+ * Uses exact Space Grotesk glyph + GPOS kerning metrics for `sans`,
+ * and conservative fixed-width estimates for `mono` across OS renderers.
  */
 export function estimateTextWidth(
   text: string,
@@ -22,23 +26,11 @@ export function estimateTextWidth(
   fontWeight = 400,
 ): number {
   if (family === "mono") {
-    const charW = fontWeight >= 600 ? fontSize * 0.62 : fontSize * 0.595;
+    const charW = fontWeight >= 600 ? fontSize * 0.665 : fontSize * 0.615;
     return Math.ceil(text.length * charW + Math.max(0, text.length - 1) * letterSpacing);
   }
 
-  let units = 0;
-  for (const ch of text) {
-    if ("ilIj1|!.,:;'`".includes(ch)) units += 0.34;
-    else if (ch === " ") units += 0.36;
-    else if ("frt()[]{}/\\-".includes(ch)) units += 0.45;
-    else if ("mwMW@#%&".includes(ch)) units += 0.9;
-    else if (ch >= "A" && ch <= "Z") units += 0.74;
-    else units += 0.62;
-  }
-  const weightBoost = fontWeight >= 600 ? 1.09 : 1.0;
-  return Math.ceil(
-    units * fontSize * weightBoost + Math.max(0, text.length - 1) * letterSpacing,
-  );
+  return Math.ceil(measureDisplayText(text, fontSize, fontWeight, letterSpacing));
 }
 
 /**
@@ -135,7 +127,7 @@ export function renderPill(opts: {
     letterSpacing,
     fontWeight,
   );
-  const width = Math.ceil(px * 2 + dotSpace + textWidth + 2);
+  const width = Math.ceil(px * 2 + dotSpace + textWidth + (family === "mono" ? 2 : 0));
   const cy = opts.y + height / 2;
   const textX = opts.x + px + dotSpace;
 
@@ -143,10 +135,23 @@ export function renderPill(opts: {
     ? `<circle cx="${opts.x + px + 3.5}" cy="${cy}" r="3" fill="${opts.dotColor}" />`
     : "";
 
+  const labelSvg =
+    family === "sans"
+      ? renderDisplayText({
+          text: opts.label,
+          x: textX,
+          y: cy + fontSize * 0.35,
+          fontSize,
+          fontWeight,
+          letterSpacing,
+          fill: opts.textColor,
+        })
+      : `<text x="${textX}" y="${cy + fontSize * 0.34}" class="${family}" font-size="${fontSize}" font-weight="${fontWeight}" letter-spacing="${letterSpacing}" fill="${opts.textColor}">${esc(opts.label)}</text>`;
+
   const svg = `<g>
     <rect x="${opts.x}" y="${opts.y}" width="${width}" height="${height}" rx="${radius}" fill="${opts.bg}" stroke="${opts.border}" stroke-width="1" />
     ${dot}
-    <text x="${textX}" y="${cy + fontSize * 0.34}" class="${family}" font-size="${fontSize}" font-weight="${fontWeight}" letter-spacing="${letterSpacing}" fill="${opts.textColor}">${esc(opts.label)}</text>
+    ${labelSvg}
   </g>`;
 
   return { svg, width };

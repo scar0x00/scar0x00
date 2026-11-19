@@ -63,7 +63,8 @@ export interface ThemePalette {
 }
 
 export const FONTS = {
-  sans: "'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif",
+  /** Fallback stack (primary display/sans text is compiled to Space Grotesk SVG paths in src/font.ts) */
+  sans: "'Space Grotesk', 'SF Pro Display', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Liberation Sans', 'DejaVu Sans', Helvetica, Arial, sans-serif",
   mono: "'JetBrains Mono', 'SFMono-Regular', ui-monospace, 'Cascadia Mono', 'Liberation Mono', 'DejaVu Sans Mono', Menlo, Consolas, monospace",
 } as const;
 

@@ -7,6 +7,7 @@ import { renderRemainArch } from "./components/remain-arch";
 import { renderSectionHeader, SECTIONS } from "./components/section-header";
 import { renderStack } from "./components/stack";
 import { renderTelemetry } from "./components/telemetry";
+import { getDisplayFont, measureDisplayText, renderDisplayText } from "./font";
 import {
   aggregateLanguages,
   computeCalendarStats,
@@ -54,6 +55,11 @@ function assertValidSvg(svg: string, label: string) {
     /&(?!(amp|lt|gt|quot|#39|#x[0-9a-fA-F]+);)/.test(svg),
     `${label} must XML-escape all ampersands`,
   ).toBe(false);
+  // Display/sans text must be compiled to vector paths (GitHub CSP blocks custom fonts)
+  expect(
+    svg.includes('class="sans"'),
+    `${label} must not fall back to system class="sans" text`,
+  ).toBe(false);
 }
 
 describe("SVG component rendering", () => {
@@ -76,6 +82,37 @@ describe("SVG component rendering", () => {
       }
     });
   }
+});
+
+describe("Space Grotesk vector font engine", () => {
+  test("loads all 4 weights, resolves diacritics, and applies GPOS kerning", () => {
+    for (const weight of [400, 500, 600, 700] as const) {
+      const font = getDisplayFont(weight);
+      expect(font.unitsPerEm).toBe(1000);
+
+      for (const ch of ["Ó", "í", "—", "·", "…", "&", "#"]) {
+        const gid = font.getGlyphId(ch.codePointAt(0)!);
+        expect(gid, `weight ${weight} should map "${ch}"`).toBeGreaterThan(0);
+        expect(font.getGlyphContours(gid).length).toBeGreaterThan(0);
+      }
+
+      const tGid = font.getGlyphId("T".codePointAt(0)!);
+      const eGid = font.getGlyphId("e".codePointAt(0)!);
+      expect(font.getKerning(tGid, eGid)).toBeLessThan(0);
+    }
+
+    const path = renderDisplayText({
+      text: "Óscar Mejías",
+      x: 28,
+      y: 145,
+      fontSize: 45,
+      fontWeight: 700,
+      letterSpacing: -1.4,
+      fill: "#F4F7F5",
+    });
+    expect(path.startsWith('<path d="M')).toBe(true);
+    expect(measureDisplayText("Óscar Mejías", 45, 700, -1.4)).toBeGreaterThan(200);
+  });
 });
 
 describe("GitHub telemetry calculations", () => {
